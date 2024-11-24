@@ -85,8 +85,8 @@ def create_atmosfer_df(daily_bike_df):
     return atmosfer_df
 
 #MEMBACA DATA
-daily_bike_df = pd.read_csv("C:/Users/rahma/submission/data/day.csv")#LOAD DATA
-hourly_bike_df = pd.read_csv("C:/Users/rahma/submission/data/hour.csv")#LOAD DATA
+daily_bike_df = pd.read_csv("https://github.com/rahmahsholihah/my-streamlit-app/blob/main/data/day.csv")#LOAD DATA
+hourly_bike_df = pd.read_csv("https://github.com/rahmahsholihah/my-streamlit-app/blob/main/data/hour.csv")#LOAD DATA
 
 #MEMNGURUTKAN DATA
 datetime_columns = ["dteday"]
