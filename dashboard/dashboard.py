@@ -39,7 +39,7 @@ def create_seasonly_users_df(daily_bike_df): #SEASONLY ORDER
     daily_bike_df["season_name"] = daily_bike_df.season.apply(lambda x: "Spring" if x == 1 else ("Summer" if x == 2 else ("Fall" if x == 3 else "Winter")))
     seasonly_users_df = daily_bike_df.groupby(by="season_name").agg({
         "casual" : "mean",
-        "registered" : "mean",
+        "registered" : "mean"
 }).sort_values(by="registered", ascending=False)
     return seasonly_users_df
 
